@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/formulario.css">
+    <link rel="shortcut icon" href="/assets/images/Flag_of_Austria.svg.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <div id="navbar-placeholder"></div>
+            <nav class="navbar" id="navbar">
+                <div class="navContainer">
+                    <ul class="navLinks">
+                        <li>
+                            <a href="/index.html"><img src="/assets/images/Austria-Flag.ico" alt="Logo do site, é a bandeira da Suiça simples, com uma cruz de cor branca sólida no meio, e com todo o redor em vermelho sólido."
+                                    class="logo"></a>
+                        </li>
+                        <li><a href="/index.html">Página Inicial</a></li>
+                        <li><a href="/pages/paisagens.html">Belezas Naturais</a></li>
+                        <li><a href="/pages/turisticos.html">Pontos Turísticos</a></li>
+                        <li><a href="/pages/curiosidades.html">Curiosidades</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <main>
+                <div class="alinhaForm">
+                    <h1>Formulário de Feedback</h1>
+                    <div class="form-container">
+                        <form id="feedbackForm">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required
+                                class="inputs required" oninput="nameValidate()">
+                            
+                                <span class="span-required" id="name-error">O nome deve conter no mínimo 3
+                                caracteres!</span>
+
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@provedor.com" required
+                                class="inputs required" oninput="emailValidate()">
+
+                            <span class="span-required" id="email-error">Digite um email válido!</span>
+                            
+                            
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea placeholder="Escreva o seu feedback" rows="5" name="mensagem" id="mensagem"
+                                required></textarea>
+                            
+                            <span class="span-required" id="mensagem-error"></span>
+                            
+                           
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+            <section class="footerContainer">
+                <div class="footerRaia">
+                    <div class="footerColuna">
+                        <h3>GitHub</h3>
+                        <ul>
+                            <li><a href="https://github.com/sampaio2188" target="_blank">Thiago Sampaio</a></li>
+                            <li><a href="https://github.com/SarmentoTiago" target="_blank">Tiago
+                                    Sarmento</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerColuna">
+                        <h3>Sugestões</h3>
+                        <p>Compartilhe sua opinião sobre o nosso site; ela é muito importante para nós. <a
+                                href="/pages/formulario.html">Clique Aqui!</a></p>
+                    </div>
+                    <div class="footerColuna">
+                        <h3>Sobre o site</h3>
+                        <p>Este site é uma atividade para obtenção de nota parcial para disciplina Desenvolvimento WEB
+                            I, onde é preciso apresentar pelo menos três belezas naturais de algum país. Utilizando HTML, CSS e JavaScript.</p>
+                    </div>
+                    <div class="footerColuna">
+                        <h3>Páginas do site</h3>
+                        <ul>
+                            <li><a href="/index.html">Página Inicial</a></li>
+                            <li><a href="/pages/paisagens.html">Belezas Naturais</a></li>
+                            <li><a href="/pages/turisticos.html">Pontos Turísticos</a></li>
+                            <li><a href="/pages/curiosidades.html">Curiosidades</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <section>
+                <div class="footerBottom">
+                    <span>2024; Feito por <span class="feitoPor">Thiago Sampaio</span> e <span class="feitoPor">Tiago
+                            Sarmento</span>.</span>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+
+
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/formulario.js"></script>
+
+</html>
